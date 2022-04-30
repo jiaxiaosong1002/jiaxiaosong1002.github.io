@@ -110,22 +110,22 @@ tr,
 p,
 a {
   font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 14px
+  font-size: 16px
 }
 
 strong {
   font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 heading {
   font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 papertitle {
   font-family: "TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700
 }
 
