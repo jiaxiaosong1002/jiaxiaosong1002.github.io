@@ -1,38 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>Recruit — 2024 | Xiaosong Jia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- use root-relative path so stylesheet is found from a subfolder -->
-  <link rel="stylesheet" href="/stylesheet.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>招生 | 复旦大学可信具身智能研究院贾萧松 — 自动驾驶 · 具身智能 · 世界模型 · 强化学习</title>
   <style>
-    /* small inline style in case you don't update stylesheet.css */
-    .recruit-red { color: #c00; font-weight: bold; }
+    :root{--accent:#0a66c2;--muted:#6b7280;--card:#fff}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"PingFang SC","Hiragino Sans GB","Microsoft Yahei",sans-serif;background:#f3f6fb;color:#111;margin:0;padding:28px}
+    .container{max-width:900px;margin:0 auto}
+    .card{background:var(--card);border-radius:12px;padding:22px;margin-bottom:18px;box-shadow:0 6px 18px rgba(13,38,77,0.06)}
+    header.hero{display:flex;gap:18px;align-items:center}
+    .hero h1{margin:0;font-size:28px;color:var(--accent)}
+    .hero p{margin:4px 0 0;color:var(--muted)}
+    h2{font-size:18px;margin:0 0 10px;color:#0b355f}
+    h3.highlight-title{margin:6px 0;font-size:18px;color:#0b355f;font-weight:700;letter-spacing:0.5px}
+    ul{padding-left:18px;margin:0}
+    li{margin:8px 0}
+    .two-col{display:grid;grid-template-columns:1fr 280px;gap:18px;align-items:start}
+    .muted{color:var(--muted);font-size:14px}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    .small{font-size:13px;color:var(--muted)}
+    .label{font-size:14px;font-weight:600;color:#0b355f;margin-bottom:4px;display:block;letter-spacing:1px}
+    .research-intro{margin-bottom:14px;font-size:14px;color:#333;line-height:1.5}
+    .work-section img{max-width:100%;border-radius:6px;margin-top:8px}
+    .work-section p{font-size:14px;color:#333;line-height:1.5}
   </style>
 </head>
 <body>
-  <div style="width:100%;max-width:800px;margin:0 auto;padding:20px;">
-    <h1 style="text-align:center;">Recruitment — 2024</h1>
+  <div class="container">
+    <div class="card hero">
+      <div style="flex:1">
+        <h1>招生贴 - 复旦大学可信具身智能研究院贾萧松 （本页面由LLM辅助）</h1>
+        <p class="muted">方向：自动驾驶 · 具身智能 · 强化学习 · 世界模型 </p>
+      </div>
+    </div>
 
-    <section>
-      <p>
-        <!-- only the direction (research topic) is bold -->
-        <b>building authentic world simulators with generative models &amp; reconstruction models and then combining imitation learning &amp; reinforcement learning to train decision-making agent in an end-to-end way.</b>
-      </p>
+    <div class="card">
+      <h2>我们研究什么 & 为什么重要</h2>
+      <p class="research-intro">我们聚焦自动驾驶、具身智能领域的核心科学问题： <b>如何让机器在纷繁复杂的物理世界中作出可靠、甚至超越人类的决策？</b>我们聚焦这一核心科学问题，并围绕以下三条紧密交织的主线展开研究，最终目标是走向统一而通用的物理世界智能。<br>
+      1. <b>端到端架构</b>：我们探究“中间任务”的存在意义与极限——检测、预测、规划……究竟哪些中间表征能够真正辅助决策，而不沦为能力的天花板？我们希望设计可进化、可舍弃的“脚手架”，让系统在初期借力，后期又能自主突破。<br>
+      2.  <b>强化学习</b>：不管是自动驾驶、机器人还是LLM/VLM领域，人们都发现让机器去模仿人类的行为（模仿学习，imitation learning）就像是鹦鹉学舌一样，知其然而不知其所以然。我们致力于用强化学习（奖励与惩罚）引导智能体在自主探索中提炼因果、发现捷径与反常识策略，从而获得真正可泛化的“所以然”。<br>
+      3. <b>世界模型</b>：真实世界的试错成本高昂乃至不可承受。我们研究借助生成式/重建式技术，以神经网络为笔、数据为墨，构建高保真、可交互的“数字孪生”——让智能体在仿真里摔跟头、长记性，再把经验迁移回物理世界。<br>
+      三条主线彼此增强，世界模型提供廉价而丰富的试验场，强化学习在此恣意探索，端到端架构则随时修剪或重塑中间任务，确保能力持续向上、不设上限。我们的最终目标是把感知、预测、决策与生成融为一体，打造能在复杂物理世界中持续进化的统一智能体。
+    </div>
 
-      <!-- recruitment text in red -->
-      <p class="recruit-red">
-        We are looking for master, Ph.D. students and research assistants in TEAI (可信具身智能研究院，统一报考智能机器人与先进制造创新学院). 
-        I am still recruiting Ph.D. and master student in 2025.
-      </p>
+    <div class="card work-section">
+      <h2>代表性工作</h2>
+      <h3>1. DriveTransformer</h3>
+      <img src="images/drivetransformer.PNG" alt="DriveTransformer示意图">
+      <p>DriveTransformer将所有的任务都抽象化为了Token，任务间的交互、时序的传递都可以直接使用Attention建模，让信息能够互通的同时不施加强约束，具有强拓展性。</p>
 
-      <p>
-        If interested, please email: <a href="mailto:jiaxiaosong1997@gmail.com">jiaxiaosong1997@gmail.com</a>
-      </p>
+      <h3>2. Bench2Drive-R</h3>
+      <img src="images/bench2drive-R.PNG" alt="Bench2Drive-R示意图">
+      <p>Bench2Drive-R将生成式模型（Stable Diffusion）作为渲染器，构建了一个状态与渲染解耦的自回归仿真引擎，支持模型的自由探索。</p>
 
-      <p><a href="/index.html">← Back to home</a></p>
-    </section>
+      <h3>3. Think2Drive</h3>
+      <img src="images/think2drive.PNG" alt="Think2Drive示意图">
+      <p>Think2Drive先构建可以潜在空间中进行推演的世界模型，随后使用强化学习，只需少量交互即可学会高性能驾驶策略，业内首次成功解决CARLA 2.0的所有任务。</p>
+    </div>
+
+    <div class="card two-col">
+      <div>
+        <h2>欢迎各阶段学生加入</h2>
+        <ul>
+          <li><strong>本科生（大一/大二）</strong>：科研实习/长期助研，手把手带入门人工智能、科研流程，准备进入科研产出节奏，为保研/出国做准备</li>
+          <li><strong>本科生（大三/大四）</strong>：课题/论文方向实习，完成自己的项目</li>
+          <li><strong>硕士/博士生</strong>：2025年九推仍有名额，请报考智能机器人与先进制造创新学院，可信具身智能研究院</li>
+        </ul>
+      </div>
+
+      <aside>
+        <h2>个人经历</h2>
+          <li><strong>教育背景</strong>：上海交通大学本（IEEE试点班，致远计划）博（吴班），本科直博拿到了多所美国Top10 CS PhD Offer</li>
+          <li><strong>论文发表</strong>：在顶级学术会议期刊上发表论文20余篇，谷歌学术引用2000余次，有多个高Star仓库，做出的工作有着一定的影响力</li>
+          <li><strong>Mentor经历</strong>：指导过>5名本科生、硕士生、博士生完成他们的第一篇顶会顶刊论文（以及后续的第二、三、四、五篇），目前记录：大二->大四 5篇共一</li>
+      </aside>
+    </div>
+
+    <div class="card">
+      <h2>我们能给你</h2>
+      <ul>
+        <li>手把手带入门人工智能知识、科研思维、完成项目、发表论文全流程</li>
+        <li>丰富的idea与科研资源</li>
+        <li>人工智能时代科研工作者的个人经验与思考</li>
+        <li>复旦/交大/科大等学校的硕博机会，大厂实习/全职工作机会</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>申请流程</h2>
+      <ol>
+        <li>准备简历（含GPA、排名、AI相关课程与经历）</li>
+        <li>发送至 <a href="mailto:jiaxiaosong@fudan.edu.cn">jiaxiaosong@fudan.edu.cn</a></li>
+        <li>经历/科研讨论</li>
+        <li>开始科研~</li>
+      </ol>
+    </div>
   </div>
 </body>
 </html>
